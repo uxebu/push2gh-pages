@@ -1,0 +1,20 @@
+{
+  "name": "deploy-to-gh-pages",
+  "version": "1.0.0",
+  "description": "Automated git-push to gh-pages branch (which on github results in a deployment).",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "gh-pages",
+    "github",
+    "pages",
+    "deploy"
+  ],
+  "author": "uxebu",
+  "license": "MIT",
+  "dependencies": {
+    "travis-encrypt": "^1.1.1"
+  }
+}
