@@ -24,6 +24,11 @@ message `Built`. Useless and actually not contributing to the actual underlying
 reason why the code is there, but a by-product of deployment.  
 That was the reason to build this project, just let travis do the pushing to `gh-pages`.
 
+# Install
+
+- `npm install`
+- ???
+
 [1]: http://jscoderetreat
 [2]: http://wolfram.kriesing.de
 [3]: http://tddbin.com
