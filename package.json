@@ -1,5 +1,5 @@
 {
-  "name": "deploy-to-gh-pages",
+  "name": "push2gh-pages",
   "version": "1.0.0",
   "description": "Automated git-push to gh-pages branch (which on github results in a deployment).",
   "scripts": {
