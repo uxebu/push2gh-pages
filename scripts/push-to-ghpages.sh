@@ -15,7 +15,7 @@ ADMIN_EMAIL=$1
 BUILD_DIR=$2
 TEMP_DIR=__t_m_p__/origin-gh-pages
 (
-  # TODO how can we fail on error?
+  set -e
   
   echo "push2ghpages: checking out 'gh-pages' branch";
   git clone --branch=gh-pages "https://${GH_TOKEN}@${GH_REF}" $TEMP_DIR
