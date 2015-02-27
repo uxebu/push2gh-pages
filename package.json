@@ -6,7 +6,8 @@
     "test": ""
   },
   "bin": {
-    "push2gh-pages": "./bin/push2gh-pages.sh"
+    "push2gh-pages": "./bin/push2gh-pages.sh",
+    "create-travis-secure": "./bin/create-travis-secure.sh"
   },
   "keywords": [
     "gh-pages",
