@@ -1,18 +1,15 @@
 #!/bin/bash
 
 if [ $# -lt 1 ]; then
-  echo "Usage: `basename $0` admin_email build_dir";
+  echo "Usage: `basename $0` build_dir";
   echo "";
-  echo "admin_email   The email address that will be used to passed to git-config";
   echo "build_dir     The directory where the built files that shall be pushed into";
   echo "              the gh-pages branch are located (relative to the project's root).";
   echo "";
   exit 1;
 fi
 
-ADMIN_EMAIL=$1
-
-BUILD_DIR=$2
+BUILD_DIR=$1
 TEMP_DIR=__t_m_p__/origin-gh-pages
 (
   set -e
@@ -26,7 +23,7 @@ TEMP_DIR=__t_m_p__/origin-gh-pages
 
   echo "push2ghpages: configuring git user+email"
   git config user.name "Travis-CI"
-  git config user.email "$ADMIN_EMAIL"
+  git config user.email "${GH_EMAIL}"
 
   echo "push2ghpages: adding files"
   # `--all` ensures that only the files from the last build end in the repo
