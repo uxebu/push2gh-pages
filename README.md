@@ -7,6 +7,10 @@ This tool takes a configured directory and updates a cloned github repo's gh-pag
 with it and pushes the changes back with a commit message such as 
 `Travis deployed "master" - Wed Feb 25 13:06:00 UTC 2015`.
 
+This way you can focus on development and less on continuously building and pushing
+it to gh-pages branch, which in the end is nothing you want to waste your time on,
+it should just happen :).
+
 # Motivation?
 
 I had a couple of sites [1], [2] and [3] that were served by [github-pages][4]
