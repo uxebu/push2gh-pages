@@ -1,9 +1,4 @@
 #!/bin/bash
 
-if [ $# -lt 1 ]; then
-  echo "Usage: `basename $0` ";
-  echo "";
-  echo "????   ....";
-  echo "";
-  exit 1;
-fi
+ROOT_DIR="$(dirname $0)/.."
+$ROOT_DIR/scripts/push-to-ghpages.sh $@
