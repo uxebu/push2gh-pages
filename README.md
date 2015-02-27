@@ -29,6 +29,11 @@ That was the reason to build this project, just let travis do the pushing to `gh
 - `npm install`
 - ???
 
+# How to use
+
+1) generate the `secure` string
+2) call `push2gh-pages` script to push the built files
+
 [1]: http://jscoderetreat
 [2]: http://wolfram.kriesing.de
 [3]: http://tddbin.com
