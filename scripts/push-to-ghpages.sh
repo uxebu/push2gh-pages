@@ -21,7 +21,6 @@ TEMP_DIR=__t_m_p__/origin-gh-pages
   git clone --branch=gh-pages "https://${GH_TOKEN}@${GH_REF}" $TEMP_DIR
 
   rm -rf $TEMP_DIR/*
-  mkdir -p $TEMP_DIR
   cp -r $BUILD_DIR/* $TEMP_DIR
   cd $TEMP_DIR
 
