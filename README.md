@@ -9,7 +9,7 @@ with it and pushes the changes back with a commit message such as
 
 This way you can focus on development and less on continuously building and pushing
 it to gh-pages branch, which in the end is nothing you want to waste your time on,
-it should just happen :).
+it should just happen when you pushed into master, right? Continuous Deployment #ftw.
 
 # Motivation?
 
