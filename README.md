@@ -36,6 +36,7 @@ That was the reason to build this project, just let travis do the pushing to `gh
 # How to use
 
 1) generate the `secure` string
+   in order to create the string you must have created the repo on travis!!!
 2) call `push2gh-pages` script to push the built files
    
 in .travis.yml define
