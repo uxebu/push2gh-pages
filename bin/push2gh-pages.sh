@@ -1,4 +1,13 @@
 #!/bin/bash
 
-ROOT_DIR="$(dirname $0)/.."
-$ROOT_DIR/scripts/push-to-ghpages.sh $@
+# in dev mode
+if [ -f ../scripts/push-to-ghpages.sh ]
+then
+  ../scripts/push-to-ghpages.sh $@
+else
+  # as installed npm package, located inside 'node_modules/push2gh-pages'
+  if [ -f ../push2gh-pages/scripts/push-to-ghpages.sh ]
+  then
+    ../push2gh-pages/scripts/push-to-ghpages.sh $@
+  fi
+fi
